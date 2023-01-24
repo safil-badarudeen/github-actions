@@ -1,0 +1,12 @@
+name: "metadata acquiring"
+on: workflow_dispatch
+jobs:
+   info:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get code
+      uses: actions/checkout@v3
+    - name: get metadat
+      run: echo "${{toJSON(inputs)}}"
+
+    
