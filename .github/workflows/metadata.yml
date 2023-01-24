@@ -7,6 +7,6 @@ jobs:
     - name: Get code
       uses: actions/checkout@v3
     - name: get metadat
-      run: echo "${{toJSON(inputs)}}"
+      run: echo "${{toJSON(github)}}"
 
     
